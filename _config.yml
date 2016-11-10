@@ -1,0 +1,13 @@
+permalink: /:categories/:year/:month/:day/:title 
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+highlighter: pygments
+title : LibrariesWest Systems Blog
+tagline: News from systems development at LibrariesWest
+author :
+  name : LibrariesWest
+  email : dxrowe@somerset.gov.uk
+  github : LibrariesWest
+  twitter : LibrariesWest
+  feedburner : 
+production_url : http://librarieswest.github.io
+gems: ["jekyll-sitemap"]
