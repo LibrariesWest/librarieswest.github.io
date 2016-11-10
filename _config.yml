@@ -9,5 +9,5 @@ author :
   github : LibrariesWest
   twitter : LibrariesWest
   feedburner : 
-production_url : http://librarieswest.github.io
+production_url : https://librarieswest.github.io/
 gems: ["jekyll-sitemap"]
