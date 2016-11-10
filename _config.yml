@@ -3,6 +3,7 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 highlighter: pygments
 title : LibrariesWest Systems Blog
 tagline: News from systems development at LibrariesWest
+theme: minima
 author :
   name : LibrariesWest
   email : dxrowe@somerset.gov.uk
