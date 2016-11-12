@@ -1,8 +1,9 @@
-title: LibrariesWest systems team
-tagline: A Jekyll theme
+title: LibrariesWest
+tagline: News from the systems team
 description: ''
 url: https://librarieswest.github.io
 baseurl: ''
+permalink: pretty
 paginate: 5
 author:
   name: Dave Rowe
