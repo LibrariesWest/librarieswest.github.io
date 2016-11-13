@@ -4,9 +4,10 @@ description: ''
 url: https://librarieswest.github.io
 baseurl: ''
 permalink: pretty
-paginate: 5
 author:
   name: Dave Rowe
   url: 
   email: dxrowe@somerset.gov.uk
 version: 1.0.0
+github:
+  repo: 'https://github.com/LibrariesWest'
