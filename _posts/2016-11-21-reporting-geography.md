@@ -10,7 +10,7 @@ LibrariesWest is a consortium of 7 library services: Bath and North East Somerse
 
 Not only are these different local authorities, but they are different authority **types**, with very different geographical size, population, and demographics.  LibrariesWest is made up of 2 County Councils and 5 Unitary Authorities.  
 
-| Authority | Authority Type | Population | Area (hectares) |
+| Authority | Type | Population | Area (hectares) |
 | --------- | -------------- | ---------- | --------------- |
 | Bath and North East Somerset | Unitary Authority | 184.9K | 35.1K |
 | Bristol | Unitary Authority | 449.3K | 23.5K |
@@ -43,12 +43,12 @@ Within each authority area there are a number of different geographical areas to
 
 So, what associated data can be gained from using these areas? A few are shown below.
 
-| Data | Area available at | Description |
+| Data | Area | Description |
 | ---- | ----------------- | ----------- |
-| Deprivation Indices | LSOA | The 2015 English Deprivation indices release comparative levels of deprivation for all Lower Layer Super Output Areas in England.  These are by deprivation type, for example health, education, income, crime, housing.  An index of multiple deprivation (IMD) is available which summarises all the deprivation types to produce an overall ranking for the LSOA.  These 32,844 ranked areas are then split into deciles to give a single 1-10 measure for each area (1 being within the most deprived, 10 being within the least). |
+| Deprivation Indices | LSOA | The 2015 English Deprivation indices release comparative levels of deprivation for all Lower Layer Super Output Areas in England.  These are by deprivation type, for example health, education, and income.  An index of multiple deprivation (IMD) is calculated which summarises all deprivation types to produce an overall ranking.  These 32,844 ranked areas are then split into deciles to give a single 1-10 measure for each area (1 being within the most deprived, 10 being within the least). |
 | Car/van availability | OA | Car availability per household is released at Output Area level describing the number of cars/vans available to each household. |
 | Population (2011) | OA | Available at Output Area level, Census population data from 2011 is available from the ONS and available broken down by age and gender in each small area. |
-| Estimated population (2015) | LSOA. | Annual mid-year population estimates are released by the ONS, broken down by age and gender and released at Lower Super Output Level.
+| Estimated population (2015) | LSOA. | Annual mid-year population estimates are released by the ONS, broken down by age and gender and released at Lower Super Output Level. |
 
 ## Embedding geography into reports
 
@@ -57,8 +57,8 @@ So how do we begin to use this geographical data?  Take a single example of a li
 - The location of the library.  This can be exact coordinates of the library, which will allow reporting on any associated statistical data, such as deprivation indices.  For mobile libraries, this is likely to be the co-ordinates of the particular stop.
 - The location of the library that owns the item.  All items have a home location which can be used in the same way as above.
 - The home library of the patron.  A patron will be tied to a particular registration library which can be used in the same way as above.
-- The home location of the patron.  The accuracy of this data will likely depend upon the accuracy of the patron address.  Although some systems will have accurate Ordnance Survey validated addresses, with exact co-ordinates, in lots of cases this is likely to be only accurate to postcode.
+- The home address of the patron.  The accuracy of this data will likely depend upon the accuracy of the patron address.  Although some systems will have accurate Ordnance Survey validated addresses, with exact co-ordinates, in lots of cases this is likely to be only accurate to postcode.
 
 Therefore for every Issue there are 4 associated geographical locations.  The library locations will often be the **same** location, but can also be distinct, especially in a wide ranging consortium where items move between libraries, and where patrons have a wide variety of libraries to use.
 
-With an appropriately structured reporting database, constructing reports that make use of extended geographical data should be fairly straightforward.  Someone asking for a count of issues for each library should be no different from them asking for issues for each of the output areas in their authority, or postcode districts.  Or a summary of issues by patron address deprivation decile.  It would be powerful to make this part of our day-to-day reporting capability, rather than an exercise that is undertaken every now and then.
+With an appropriately structured reporting database, constructing reports that make use of extended geographical data should be fairly straightforward.  Someone asking for a count of issues for each library should be no less of a challenge than asking for issues for each of the output areas in their authority, or postcode districts.  Or a summary of issues by patron address deprivation decile.  It would be powerful to make this part of our day-to-day reporting capability, rather than an exercise that is undertaken every now and then.
