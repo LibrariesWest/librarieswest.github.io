@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Reporting with Geography
+description: Using geography data in library data reporting and.
+image: 2016-11-21-reporting-geography.png
 author: Dave Rowe
 ---
 
