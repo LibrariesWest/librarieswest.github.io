@@ -8,7 +8,8 @@ author: Dave Rowe
 
 LibrariesWest is a consortium of 7 library services: Bath and North East Somerset, Bristol, Dorset, North Somerset, Poole, Somerset, and South Gloucestershire.
 
-## LibrariesWest authority types
+LibrariesWest authority types
+-----------------------------
 
 Not only are these different local authorities, but they are different authority **types**, with very different size, population, and demographics.  LibrariesWest is made up of 2 County Councils and 5 Unitary Authorities.  
 
@@ -33,7 +34,8 @@ The following map shows the boundary lines of each authority within LibrariesWes
 
 Bristol has an odd looking boundary line.  It stretches into the Bristol channel to the two islands, Flat Holm and Steep Holm.  When calculating the area of the authority it can be deceptive given that a large amount of this is the channel!
 
-## Area profiling
+Area profiling
+--------------
 
 Within each authority area there are a number of further geographical areas to split the authority.
 
@@ -52,7 +54,8 @@ So, what associated data can be gained from using these area definitions? A few 
 | Population (2011) | OA | Available at Output Area level, Census population data from 2011 is available from the ONS, broken down by age and gender in each small area. |
 | Estimated population (2015) | LSOA | Annual mid-year population estimates are released by the ONS, broken down by age and gender and released at Lower Super Output Level. |
 
-## Embedding geography into reports
+Embedding geography into reports
+--------------------------------
 
 So how do we begin to use this geographical data?  Take a single example of a library transaction  - an issue of an item.  That transaction will have a number of parameters that have associated geographical data.
 
