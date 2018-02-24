@@ -7,7 +7,7 @@ image: 2018-02-24-narnia.jpeg
 published: true
 ---
 
-We often report on the number of times titles in the LibrariesWest catalogue have been issued. Or the number of issues of individual copies of a title.
+We often report on the number of times book titles in the LibrariesWest catalogue have been issued. Or the number of times individual copies have been issued.
 
 There will be good reasons for keeping an eye on this data, more known to library staff than us. Some reasons are clear: popularity of stock gives insight into what people want, and how often particular sets, such as Books on Prescription titles, are being issued. It can also provide data on the condition of items, and shelf-life of an item.
 
