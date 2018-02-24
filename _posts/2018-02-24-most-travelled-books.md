@@ -35,5 +35,5 @@ For every item in the catalogue we've calculated which are the most travelled. W
 | Never alone | Haynes, Elizabeth | 9781908434968 | 901 | 16 |
 | What dark clouds hide | Holt, Anne | 9781848876187 | 854 | 14 |
 | No place for a woman | Wood, Valerie | 9780552171199 | 845 | 14 |
-| The girl below stairs | Felton, Jennie | 9781472210517,842 | 14 |
+| The girl below stairs | Felton, Jennie | 9781472210517 | 842 | 14 |
 | The body on the doorstep | MacKenzie, A. J. | 9781785761201 | 840 | 16 |
