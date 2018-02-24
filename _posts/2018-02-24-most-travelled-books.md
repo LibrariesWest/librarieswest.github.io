@@ -25,7 +25,7 @@ Calculating the distance for that route requires location data for the libraries
 
 For every item in the catalogue we've calculated which are the most travelled. We've also shown the number of issues for those items. Here's the top ten. Our most travelled item is a copy of 'The killing in the Cafe', which has managed 1214 miles from 20 issues.
 
-| Title | Author | ISBN | Distance | Issues |
+| Title | Author | ISBN | Miles | Issues |
 | ----- | ------ | ---- | -------- | ------ |
 | The killing in the cafe | Brett, Simon | 9781780295657 | 1214 | 20 |
 | The bone field | Kernick, Simon | 9781780894539 | 999 | 15 |
