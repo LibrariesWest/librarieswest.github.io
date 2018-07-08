@@ -1,13 +1,50 @@
-title: LibrariesWest
-tagline: Thoughts from the Systems Team
-description: ''
-url: https://librarieswest.github.io
-baseurl: ''
-permalink: pretty
+remote_theme: mmistakes/minimal-mistakes
+
+locale: "en-GB"
+title: "Thoughts from the Systems Team"
+title_separator: "-"
+description: "LibrariesWest Systems Team blog looking at data and library systems"
+url: "https://librarieswest.github.io"
+name: "Libraries West Systems Team"
+repository: "librarieswest/librarieswest.github.io"
+search: true
+words_per_minute: 200
+
+twitter:
+  username: "librarieswest"
+
 author:
-  name: Dave Rowe
-  url: 
-  email: dxrowe@somerset.gov.uk
-version: 1.0.0
-github:
-  repo: 'https://github.com/LibrariesWest'
+  name: "Libraries West"
+  avatar: "/images/logo.png"
+  bio: "Seven library services working together for the benefit of everyone"
+  email: "info@somerset.gov.uk"
+  uri: "https://www.librarieswest.org.uk"
+  github: "librarieswest"
+  twitter: &twitter "librarieswest"
+
+# Outputting
+permalink: /:title
+paginate: 5
+paginate_path: /page:num/
+timezone: Europe/London # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
