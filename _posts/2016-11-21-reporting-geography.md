@@ -1,9 +1,7 @@
 ---
-layout: post
 title: Reporting with Geography
 description: Using geography data in library data reporting and.
 image: 2016-11-21-reporting-geography.png
-author: Dave Rowe
 ---
 
 LibrariesWest is a consortium of 7 library services: Bath and North East Somerset, Bristol, Dorset, North Somerset, Poole, Somerset, and South Gloucestershire.

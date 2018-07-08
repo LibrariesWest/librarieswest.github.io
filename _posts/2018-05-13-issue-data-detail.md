@@ -1,8 +1,6 @@
 ---
-layout: post
 title: Level of detail for issue data
 description: how much detail is useful?
-author: Dave
 image: 
 published: true
 ---

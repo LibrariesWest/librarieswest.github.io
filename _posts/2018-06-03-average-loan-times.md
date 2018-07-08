@@ -1,8 +1,6 @@
 ---
-layout: post
 title: Average loan times
 description: How long do people loan our items for?
-author: Dave
 image: 
 published:false
 ---

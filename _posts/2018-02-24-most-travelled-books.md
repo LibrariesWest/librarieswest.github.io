@@ -1,8 +1,6 @@
 ---
-layout: post
 title: Most travelled books
 description: top ten lists by travel distance
-author: Dave
 image: 2018-02-24-narnia.jpeg
 published: true
 ---
