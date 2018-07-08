@@ -1,15 +1,4 @@
 ---
-layout: default
-title: Home
+layout: home
+author_profile: true
 ---
-
-<div class="page">
-    <h1 class="page-title">Posts</h1>
-    <ul class="posts">
-        {% for post in site.posts %}
-        <li>
-            {{ post.date | date_to_string }}&nbsp;<a href="{{ post.url }}">{{ post.title }}</a>
-        </li>
-        {% endfor %}
-    </ul>
-</div>
