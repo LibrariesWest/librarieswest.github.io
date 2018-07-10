@@ -1,8 +1,6 @@
 ---
 title: Level of detail for issue data
 description: how much detail is useful?
-image: 
-published: true
 ---
 
 When working on library data reports we often have to decide how much detail we should provide. Primarily this is guided by whatever people have asked for. But we also try to create repeatable data extracts that could cover requirements that may arise in the future.

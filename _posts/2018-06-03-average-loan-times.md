@@ -1,8 +1,7 @@
 ---
 title: Average loan times
 description: How long do people loan our items for?
-image: 
-published:false
+published: false
 ---
 
 Across LibrariesWest there are some variations in how long we lend things out for, this can change depending on item type and library service, and some other things. But most LibrariesWest users will know that a book loan is generally 3 weeks.

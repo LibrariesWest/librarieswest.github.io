@@ -1,8 +1,6 @@
 ---
 title: Most travelled books
 description: top ten lists by travel distance
-image: 2018-02-24-narnia.jpeg
-published: true
 ---
 
 We often report on the number of times book titles in the LibrariesWest catalogue have been issued. Or the number of times individual copies have been issued.
