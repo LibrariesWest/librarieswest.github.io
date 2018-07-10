@@ -1,7 +1,7 @@
 main:
-  - title: "About"
-    url: /about/
-  - title: "Open Data"
-    url: /opendata/
-  - title: "Membership Map"
+  - title: "Data"
+    url: /data/
+  - title: "Membership"
     url: /map/
+  - title: "About Us"
+    url: /about/

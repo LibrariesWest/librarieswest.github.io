@@ -16,14 +16,14 @@ twitter:
   username: "librarieswest"
 
 author:
-  name: "Libraries West Systems"
+  name: "LibrariesWest"
   avatar: "/images/LW Open Data Small.png"
   bio: "Seven library services working together for the benefit of everyone"
   email: "librarieswest@somerset.gov.uk"
   uri: "https://www.librarieswest.org.uk"
   github: "librarieswest"
   twitter: &twitter "librarieswest"
-  facebook: "https://en-gb.facebook.com/LibrariesWest"
+  facebook: "librarieswest"
 
 # Outputting
 permalink: /:title
