@@ -1,3 +1,5 @@
+include: ["_pages"]
+
 remote_theme: mmistakes/minimal-mistakes
 
 locale: "en-GB"
@@ -14,7 +16,7 @@ twitter:
   username: "librarieswest"
 
 author:
-  name: "Libraries West"
+  name: "Libraries West Systems"
   avatar: "/images/LW Open Data Small.png"
   bio: "Seven library services working together for the benefit of everyone"
   email: "librarieswest@somerset.gov.uk"
