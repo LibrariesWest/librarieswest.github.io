@@ -87,13 +87,13 @@ var createMemberMap = function () {
 						});
 						map.addControl(new mapboxgl.FullscreenControl());
 						map.on('load', function () {
+
 							map.addSource('lsoas', { type: 'geojson', data: lsoa_data });
 							map.addLayer({
 								"id": "lsoas",
 								"type": "fill",
 								"source": "lsoas",
 								'paint': {
-									'fill-outline-color': 'white',
 									'fill-color': [
 										'interpolate',
 										['linear'],
@@ -109,6 +109,17 @@ var createMemberMap = function () {
 										8, '#723122'
 									],
 									'fill-opacity': 0.75
+								}
+							});
+							map.on('mousemove', function (e) {
+								var lsoas = map.queryRenderedFeatures(e.point, {
+									layers: ['lsoas']
+								});
+
+								if (lsoas.length > 0) {
+									document.getElementById('pd').innerHTML = '<h3><strong>' + lsoas[0].properties.lsoa11cd + '</strong></h3><p><strong><em>' + states[0].properties.population_percentage + '</strong> percentage population</em></p>';
+								} else {
+									document.getElementById('pd').innerHTML = '<p>Hover over an area!</p>';
 								}
 							});
 						});
