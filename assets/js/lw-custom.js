@@ -65,7 +65,7 @@ var createMemberMap = function () {
 						for (var i = 0; i < lsoa_data.features.length; i++) {
 							lsoa_data.features[i].properties.users = {};
 							// For each feature (LSOA) we need to add all the libraries
-							var population = lsoa_data.features[i].properties['LSOAPopulation_All'];
+							var population = lsoa_data.features[i].properties['LSOAPopulation_All Ages'];
 							var user_count = 0;
 							for (var y = 0; y < member_data.length; y++) {
 								if (member_data[y][11] === lsoa_data.features[i].properties.lsoa11cd) {
@@ -74,8 +74,8 @@ var createMemberMap = function () {
 									lsoa_data.features[i].properties.users[member_data[y][1]] = member_data[y][1];
 								}
 							}
-							lsoa_data.features[i].properties.population_percentage = Math.round(users / population * 100);
-							lsoa_data.features[i].properties.opacity = Math.round((users / population), 1);
+							lsoa_data.features[i].properties.population_percentage = Math.round(user_count / population * 100);
+							lsoa_data.features[i].properties.opacity = Math.round((user_count / population), 1);
 						}
 						// Now add the map
 						mapboxgl.accessToken = 'pk.eyJ1IjoiZHhyb3dlIiwiYSI6ImNqMnI5Y2p2cDAwMHQzMm11cjZlOGQ2b2oifQ.uxhJoz3QCO6cARRQ8uKdzw';
@@ -93,12 +93,22 @@ var createMemberMap = function () {
 								"type": "fill",
 								"source": "lsoas",
 								'paint': {
-									'fill-color': 'skyblue',
 									'fill-outline-color': 'white',
-									'fill-opacity': {
-										property: 'population_percentage',
-										stops: [[1, 0.1], [2, 0.2], [3, 0.3]]
-									}
+									'fill-color': [
+										'interpolate',
+										['linear'],
+										['get', 'population_percentage'],
+										0, '#F2F12D',
+										1, '#EED322',
+										2, '#E6B71E',
+										3, '#DA9C20',
+										4, '#CA8323',
+										5, '#B86B25',
+										6, '#A25626',
+										7, '#8B4225',
+										8, '#723122'
+									],
+									'fill-opacity': 0.75
 								}
 							});
 						});
