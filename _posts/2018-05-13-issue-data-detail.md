@@ -3,13 +3,13 @@ title: Level of detail for issue data
 description: how much detail is useful?
 ---
 
-When working on library data reports we often have to decide how much detail we should provide. Primarily this is guided by whatever people have asked for. But we also try to create repeatable data extracts that could cover requirements that may arise in the future.
+When working on library data requests we often have to decide how much detail we should provide. Primarily this is guided by whatever people requested. But we also try to create repeatable data extracts that could cover requirements that may arise in the future.
 
-It's also useful to have extracts that cover multiple uses. One library service may report on counts of issues per library for each month. Another may have a need to report across all libraries per month, but also want user profile as a level of detail in the data. Both can probably be served by a single data extract, and tailored as required by the report user.
+It's also useful to have extracts that cover multiple uses. One library service may report on counts of issues per library for each month. Another may have a need to report across all libraries per month, but also want user profile as a level of detail in the data. Both can probably be served by a single data report, and tailored as required by the user.
 
-So the choice is between level of detail and *'manageability'*. Having extra data is not a problem until it becomes so large that it's difficult to transfer or process. For issue data, we wouldn't assume people could cope with a row for each item issue, as it would be hundreds of thousands of rows. We often work at quite high levels of aggregation such 'per month'. Rarely as detailed as per day.
+So the choice is between level of detail and *'manageability'*. Having extra data is not a problem, until it becomes so large that it's difficult to transfer or process. For issue data, we wouldn't assume people could cope with a row for each item issue, as it would be hundreds of thousands of rows. So we often work at quite high levels of aggregation such 'per month'. Rarely as detailed as per day.
 
-But it's those details that provide the most interesting ways of looking at data. And there are ways we can get at extra detail without having to make huge extracts. Reporting per *'day of the week'* rather than per *'date'* would mean we could see differences between different days of the week. Further than this, we can look at hour of the day to start to analyse when libraries are most active (at least in terms of borrowing).
+But it's the details that provide the most interesting ways of looking at data. And there are ways we can get at extra detail without having to make huge extracts. Reporting per *'day of the week'* rather than per *'date'* would mean we could see differences between different days of the week. Further than this, we can look at hour of the day to start to analyse when libraries are most active (at least in terms of borrowing).
 
 So let's look at issues per hour across all libraries in LibrariesWest. It'd be nice to look at two things:
 
