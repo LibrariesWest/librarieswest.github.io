@@ -50,15 +50,51 @@ var updateDates = function () {
 };
 
 var createMemberMap = function () {
-	mapboxgl.accessToken = 'pk.eyJ1IjoiZHhyb3dlIiwiYSI6ImNqMnI5Y2p2cDAwMHQzMm11cjZlOGQ2b2oifQ.uxhJoz3QCO6cARRQ8uKdzw';
 
-	const map = new mapboxgl.Map({
-		container: "map",
-		style: 'mapbox://styles/mapbox/streets-v9'
-	});
 
-	map.addControl(new mapboxgl.FullscreenControl());
-
+	// First get LSOA JSON
+	getJSON('/downloads/LibrariesWestLSOAsWithPop.geojson',
+		function (err, lsoa_data) {
+			if (lsoa_data && lsoa_data.length && lsoa_data.length > 0) {
+				// Then we get our latest members CSV
+				Papa.parse('https://raw.githubusercontent.com/LibrariesWest/opendata/master/membership/members.csv', {
+					download: true,
+					complete: function (members) {
+						// First do our processing on the geojson
+						for (var i = 0; i < lsoa_data.features.length; i++) {
+							lsoa_data.features[i].properties.users = {};
+							// For each feature (LSOA) we need to add all the libraries
+							var population = lsoa_data.features[i].properties['LSOAPopulation_All'];
+							var user_count = 0;
+							for (var y = 0; y < members.length; y++) {
+								if (members[y][11] === lsoa_data.features[i].properties.lsoa11cd) {
+									var users = members[y][12];
+									if (users !== '*') user_count += parseInt(users);
+									lsoa_data.features[i].properties.users[members[y][1]] = members[y][1];
+								}
+							}
+							lsoa_data.features[i].properties.population_percentage = Math.round(users / population * 100);
+							lsoa_data.features[i].properties.opacity = Math.round((users / population), 1);
+						}
+						// Now add the map
+						mapboxgl.accessToken = 'pk.eyJ1IjoiZHhyb3dlIiwiYSI6ImNqMnI5Y2p2cDAwMHQzMm11cjZlOGQ2b2oifQ.uxhJoz3QCO6cARRQ8uKdzw';
+						const map = new mapboxgl.Map({
+							container: "map",
+							style: 'mapbox://styles/mapbox/light-v9'
+						});
+						map.addControl(new mapboxgl.FullscreenControl());
+						map.on('load', function () {
+							map.addSource('lsoas', { type: 'geojson', data: lsoa_data });
+							map.addLayer({
+								"id": "lsoas",
+								"type": "fill",
+								"source": "lsoas"
+							});
+						});
+					}
+				});
+			}
+		});
 };
 
 document.addEventListener("DOMContentLoaded", function () {
