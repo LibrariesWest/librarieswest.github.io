@@ -1,7 +1,5 @@
 main:
   - title: "Data"
     url: /data/
-  - title: "Membership"
-    url: /map/
   - title: "About Us"
     url: /about/
