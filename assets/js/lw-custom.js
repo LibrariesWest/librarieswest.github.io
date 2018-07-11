@@ -87,7 +87,7 @@ var createMemberMap = function () {
 						});
 						map.addControl(new mapboxgl.FullscreenControl());
 						map.on('load', function () {
-
+							['#FFEDA0', '#FED976', '#FEB24C', '#FD8D3C', '#FC4E2A', '#E31A1C', '#BD0026', '#800026'];
 							map.addSource('lsoas', { type: 'geojson', data: lsoa_data });
 							map.addLayer({
 								"id": "lsoas",
@@ -98,17 +98,16 @@ var createMemberMap = function () {
 										'interpolate',
 										['linear'],
 										['get', 'population_percentage'],
-										0, '#F2F12D',
-										3, '#EED322',
-										6, '#E6B71E',
-										9, '#DA9C20',
-										12, '#CA8323',
-										15, '#B86B25',
-										18, '#A25626',
-										21, '#8B4225',
-										24, '#723122'
+										0, '#FFEDA0',
+										3, '#FED976',
+										6, '#FEB24C',
+										9, '#FD8D3C',
+										12, '#FC4E2A',
+										15, '#E31A1C',
+										18, '#BD0026',
+										21, '#800026'
 									],
-									'fill-opacity': 0.75
+									'fill-opacity': 0.6
 								}
 							});
 							map.on('mousemove', function (e) {
