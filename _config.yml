@@ -1,9 +1,11 @@
 include: ["_pages"]
 
 remote_theme: mmistakes/minimal-mistakes
+minimal_mistakes_skin: "dirt"
 
 head_scripts:
   - /assets/js/lw-custom.js
+  - https://cdnjs.cloudflare.com/ajax/libs/mapbox-gl/0.46.0/mapbox-gl.js
 
 locale: "en-GB"
 title: "Thoughts from the Systems Team"
