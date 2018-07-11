@@ -43,7 +43,6 @@ var updateDates = function () {
 document.addEventListener("DOMContentLoaded", function () {
 	// Get the current page
 	var path = window.location.pathname;
-	var page = path.split("/").pop().pop();
 
-	if (page === 'data') updateDates();
+	if (path === '/data/') updateDates();
 });
