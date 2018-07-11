@@ -55,7 +55,7 @@ var createMemberMap = function () {
 	// First get LSOA JSON
 	getJSON('/downloads/LibrariesWestLSOAsWithPop.geojson',
 		function (err, lsoa_data) {
-			if (lsoa_data && lsoa_data.length && lsoa_data.length > 0) {
+			if (lsoa_data) {
 				// Then we get our latest members CSV
 				Papa.parse('https://raw.githubusercontent.com/LibrariesWest/opendata/master/membership/members.csv', {
 					download: true,
