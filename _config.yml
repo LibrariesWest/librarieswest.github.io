@@ -2,6 +2,9 @@ include: ["_pages"]
 
 remote_theme: mmistakes/minimal-mistakes
 
+head_scripts:
+  - /assets/js/lw-custom.js
+
 locale: "en-GB"
 title: "Thoughts from the Systems Team"
 title_separator: "-"
