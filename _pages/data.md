@@ -4,13 +4,13 @@ description: "What's all this about data?"
 permalink: /data/
 ---
 
-We use library data a lot, and you are welcome to as well!
+We use library data a lot, and would love you to as well!
 
-Our open data is made available on our [open data repository](https://github.com/LibrariesWest/opendata), and direct links are included below. Because a lot of it delves into the workings of library systems (reservations, issues, etc) we have created documentation that describes the the data, and how it is created. By all means get stuck straight into the data, but if delving any deeper into it then please check out the documentation as well.
+Our open data is made available on our [open data repository](https://github.com/LibrariesWest/opendata), direct links are included below. Because a lot of it delves into the workings of our library system (reservations, issues, etc), we have created documentation that details the the data, and how it is created. By all means get stuck straight into the data, but if delving deeper into it then please check out the documentation as well.
 
 Licence: [Open Government Licence v3](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)
 
-[LibrariesWest Open Data Documentation](https://librarieswest.gitbook.io/librarieswest-open-data)
+Documentation: [LibrariesWest Open Data Documentation](https://librarieswest.gitbook.io/librarieswest-open-data)
 
 ### Bills/charges
 
