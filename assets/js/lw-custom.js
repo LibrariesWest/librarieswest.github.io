@@ -99,13 +99,13 @@ var createMemberMap = function () {
 										['linear'],
 										['get', 'population_percentage'],
 										0, '#FFEDA0',
-										3, '#FED976',
-										6, '#FEB24C',
-										9, '#FD8D3C',
-										12, '#FC4E2A',
-										15, '#E31A1C',
-										18, '#BD0026',
-										21, '#800026'
+										4, '#FED976',
+										8, '#FEB24C',
+										12, '#FD8D3C',
+										18, '#FC4E2A',
+										22, '#E31A1C',
+										26, '#BD0026',
+										30, '#800026'
 									],
 									'fill-opacity': 0.6
 								}
@@ -116,7 +116,7 @@ var createMemberMap = function () {
 								});
 
 								if (lsoas.length > 0) {
-									document.getElementById('pd').innerHTML = '<h3><strong>' + lsoas[0].properties.lsoa11cd + '</strong></h3><p><strong><em>' + lsoas[0].properties.population_percentage + '</strong> percentage population</em></p>';
+									document.getElementById('pd').innerHTML = '<h3><strong>' + lsoas[0].properties.lsoa11cd + '</strong></h3><p><strong><em>' + lsoas[0].properties.population_percentage + '</strong> percent population</em></p>';
 								} else {
 									document.getElementById('pd').innerHTML = '';
 								}
