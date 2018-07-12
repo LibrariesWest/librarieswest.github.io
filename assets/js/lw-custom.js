@@ -116,9 +116,9 @@ var createMemberMap = function () {
 								});
 
 								if (lsoas.length > 0) {
-									document.getElementById('pd').innerHTML = '<h3><strong>' + lsoas[0].properties.lsoa11cd + '</strong></h3><p><strong><em>' + states[0].properties.population_percentage + '</strong> percentage population</em></p>';
+									document.getElementById('pd').innerHTML = '<h3><strong>' + lsoas[0].properties.lsoa11cd + '</strong></h3><p><strong><em>' + lsoas[0].properties.population_percentage + '</strong> percentage population</em></p>';
 								} else {
-									document.getElementById('pd').innerHTML = '<p>Hover over an area!</p>';
+									document.getElementById('pd').innerHTML = '';
 								}
 							});
 						});
