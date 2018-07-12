@@ -3,3 +3,5 @@ main:
     url: /data/
   - title: "About Us"
     url: /about/
+  - title: "Members"
+    url: /map/
