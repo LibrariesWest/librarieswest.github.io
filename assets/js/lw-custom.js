@@ -121,7 +121,7 @@ var createMemberMap = function () {
 								// Change the cursor style as a UI indicator.
 								map.getCanvas().style.cursor = 'pointer';
 
-								var coordinates = e.features[0].geometry.coordinates.slice();
+								var coordinates = e.features[0].geometry.coordinates[0][0].slice();
 								var description = '<strong>Library users <em>' + e.features[0].properties.population_percentage + '</strong> percent of population</em>';
 
 								popup.setLngLat(coordinates)
