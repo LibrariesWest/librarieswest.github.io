@@ -86,6 +86,8 @@ var createMemberMap = function () {
 							zoom: 12
 						});
 						map.addControl(new mapboxgl.FullscreenControl());
+						var nav = new mapboxgl.NavigationControl();
+						map.addControl(nav, 'top-left');
 						map.on('load', function () {
 							['#FFEDA0', '#FED976', '#FEB24C', '#FD8D3C', '#FC4E2A', '#E31A1C', '#BD0026', '#800026'];
 							map.addSource('lsoas', { type: 'geojson', data: lsoa_data });
@@ -115,7 +117,7 @@ var createMemberMap = function () {
 								closeButton: false,
 								closeOnClick: false
 							});
-							map.on('mouseenter', 'places', function (e) {
+							map.on('mouseenter', 'lsoas', function (e) {
 								// Change the cursor style as a UI indicator.
 								map.getCanvas().style.cursor = 'pointer';
 
@@ -127,7 +129,7 @@ var createMemberMap = function () {
 									.addTo(map);
 							});
 
-							map.on('mouseleave', 'places', function () {
+							map.on('mouseleave', 'lsoas', function () {
 								map.getCanvas().style.cursor = '';
 								popup.remove();
 							});
