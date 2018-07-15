@@ -124,9 +124,8 @@ var createMemberMap = function () {
 								if (lsoas.length > 0) {
 									// Change the cursor style as a UI indicator.
 									map.getCanvas().style.cursor = 'pointer';
-									var coordinates = lsoas[0].geometry.coordinates[0][0].slice();
 									var description = '<strong>Library users <em>' + lsoas[0].properties.population_percentage + '</strong> percent of population</em>';
-									popup.setLngLat(e.point)
+									popup.setLngLat(map.unproject(e.point))
 										.setHTML(description)
 										.addTo(map);
 								} else {
