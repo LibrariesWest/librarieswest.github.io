@@ -117,23 +117,23 @@ var createMemberMap = function () {
 								closeButton: false,
 								closeOnClick: false
 							});
-							map.on('mouseenter', 'lsoas', function (e) {
-								// Change the cursor style as a UI indicator.
-								map.getCanvas().style.cursor = 'pointer';
-
-								var coordinates = e.features[0].geometry.coordinates[0][0].slice();
-								var description = '<strong>Library users <em>' + e.features[0].properties.population_percentage + '</strong> percent of population</em>';
-
-								popup.setLngLat(coordinates)
-									.setHTML(description)
-									.addTo(map);
+							map.on('mousemove', 'lsoas', function (e) {
+								var lsoas = map.queryRenderedFeatures(e.point, {
+									layers: ['lsoas']
+								});
+								if (lsoas.length > 0) {
+									// Change the cursor style as a UI indicator.
+									map.getCanvas().style.cursor = 'pointer';
+									var coordinates = lsoas[0].geometry.coordinates[0][0].slice();
+									var description = '<strong>Library users <em>' + lsoas[0].properties.population_percentage + '</strong> percent of population</em>';
+									popup.setLngLat(coordinates)
+										.setHTML(description)
+										.addTo(map);
+								} else {
+									map.getCanvas().style.cursor = '';
+									popup.remove();
+								}
 							});
-
-							map.on('mouseleave', 'lsoas', function () {
-								map.getCanvas().style.cursor = '';
-								popup.remove();
-							});
-
 						});
 					}
 				});
