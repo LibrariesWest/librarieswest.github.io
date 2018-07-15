@@ -110,17 +110,28 @@ var createMemberMap = function () {
 									'fill-opacity': 0.6
 								}
 							});
-							map.on('mousemove', function (e) {
-								var lsoas = map.queryRenderedFeatures(e.point, {
-									layers: ['lsoas']
-								});
-
-								if (lsoas.length > 0) {
-									document.getElementById('pd').innerHTML = '<h3><strong>' + lsoas[0].properties.lsoa11cd + '</strong></h3><p><strong><em>' + lsoas[0].properties.population_percentage + '</strong> percent population</em></p>';
-								} else {
-									document.getElementById('pd').innerHTML = '';
-								}
+							// Create a popup, but don't add it to the map yet.
+							var popup = new mapboxgl.Popup({
+								closeButton: false,
+								closeOnClick: false
 							});
+							map.on('mouseenter', 'places', function (e) {
+								// Change the cursor style as a UI indicator.
+								map.getCanvas().style.cursor = 'pointer';
+
+								var coordinates = e.features[0].geometry.coordinates.slice();
+								var description = '<strong>Library users <em>' + e.features[0].properties.population_percentage + '</strong> percent of population</em>';
+
+								popup.setLngLat(coordinates)
+									.setHTML(description)
+									.addTo(map);
+							});
+
+							map.on('mouseleave', 'places', function () {
+								map.getCanvas().style.cursor = '';
+								popup.remove();
+							});
+
 						});
 					}
 				});
