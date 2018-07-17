@@ -89,6 +89,7 @@ var createMemberMap = function () {
 						var nav = new mapboxgl.NavigationControl();
 						map.addControl(nav, 'top-left');
 						map.on('load', function () {
+							document.getElementById('map-loader').innerHTML = '';
 							['#FFEDA0', '#FED976', '#FEB24C', '#FD8D3C', '#FC4E2A', '#E31A1C', '#BD0026', '#800026'];
 							map.addSource('lsoas', { type: 'geojson', data: lsoa_data });
 							map.addLayer({
