@@ -81,7 +81,7 @@ var createMemberMap = function () {
 						// mapboxgl.accessToken = 'pk.eyJ1IjoiZHhyb3dlIiwiYSI6ImNqMnI5Y2p2cDAwMHQzMm11cjZlOGQ2b2oifQ.uxhJoz3QCO6cARRQ8uKdzw';
 						const map = new mapboxgl.Map({
 							container: "map",
-							style: '/assets/json/light.json',
+							style: 'https://librarieswest.github.io/assets/json/light.json',
 							center: [-3.00, 51.13],
 							zoom: 12
 						});
