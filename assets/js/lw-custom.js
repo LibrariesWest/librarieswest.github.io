@@ -78,10 +78,10 @@ var createMemberMap = function () {
 							lsoa_data.features[i].properties.opacity = Math.round((user_count / population), 1);
 						}
 						// Now add the map
-						mapboxgl.accessToken = 'pk.eyJ1IjoiZHhyb3dlIiwiYSI6ImNqMnI5Y2p2cDAwMHQzMm11cjZlOGQ2b2oifQ.uxhJoz3QCO6cARRQ8uKdzw';
+						// mapboxgl.accessToken = 'pk.eyJ1IjoiZHhyb3dlIiwiYSI6ImNqMnI5Y2p2cDAwMHQzMm11cjZlOGQ2b2oifQ.uxhJoz3QCO6cARRQ8uKdzw';
 						const map = new mapboxgl.Map({
 							container: "map",
-							style: 'mapbox://styles/mapbox/light-v9',
+							style: 'https://openzoom.librarydata.uk/styles/zoomstacklight.json',
 							center: [-3.00, 51.13],
 							zoom: 12
 						});
