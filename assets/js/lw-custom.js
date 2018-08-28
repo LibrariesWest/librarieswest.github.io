@@ -70,7 +70,8 @@ var createMemberMap = function () {
 							for (var y = 0; y < member_data.length; y++) {
 								if (member_data[y][11] === lsoa_data.features[i].properties.lsoa11cd) {
 									var users = member_data[y][12];
-									if (users !== '*') user_count += parseInt(users);
+									if (users !== '*') user_count = (user_count + parseInt(users));
+									if (users === '*') user_count = (user_count + 1); // For suppressed data assume 1
 									lsoa_data.features[i].properties.users[member_data[y][1]] = member_data[y][1];
 								}
 							}
@@ -110,7 +111,7 @@ var createMemberMap = function () {
 										26, '#BD0026',
 										30, '#800026'
 									],
-									'fill-opacity': 0.6
+									'fill-opacity': 0.5
 								}
 							});
 							// Create a popup, but don't add it to the map yet.
