@@ -16,8 +16,8 @@ Before doing the analysis we need to set some rules:
 
 So, here are the results:
 
-| Title | ISBN | Issues | Average Days |
-| ----- | ---- | ------ | ------------ |
+| Title | ISBN | Average Number of days | Issues |
+| ----- | ---- | -----------------------|------- |
 | The feeling good handbook | 0452281326 | 91 | 142 |
 | Computing made easy for the over 50s | 9781844901128 | 89 | 102 |
 | The mindful way through depression | 9781593851286 | 85 | 182 |
@@ -31,4 +31,4 @@ So, here are the results:
 
 The results are overwhelmingly on managing wellbeing, or else helping with computing. Perhaps not so surpisingly. The average loan times post had already shown an above average loan time for our 'Books on Prescription' titles, this further shows a certain number of particular titles that people really keep hold of.
 
-The feeling good handbook manages a huge average of 142 days loan. Thankfully there are [plenty of copies available though](https://www.librarieswest.org.uk/client/en_GB/default/search/detailnonmodal/ent:$002f$002fSD_ILS$002f0$002fSD_ILS:825639/one?qu=0452281326&te=ILS&rt=false%7C%7C%7CISBN%7C%7C%7CISBN).
+The feeling good handbook manages a huge average of 91 days on loan. Thankfully there are [plenty of copies available](https://www.librarieswest.org.uk/client/en_GB/default/search/detailnonmodal/ent:$002f$002fSD_ILS$002f0$002fSD_ILS:825639/one?qu=0452281326&te=ILS&rt=false%7C%7C%7CISBN%7C%7C%7CISBN).
