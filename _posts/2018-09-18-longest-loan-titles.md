@@ -29,6 +29,6 @@ So, here are the results:
 | Windows 10 Simplified | 9781119057154 | 77 | 173 |
 | Calm parents, happy kids | 9780091955205 | 76 | 102 |
 
-The results are overwhelmingly on managing wellbeing, or else helping with computing. Perhaps not so surpisingly. The average loan times post had already shown an above average loan time for our 'Books on Prescription' titles, this further shows a certain number of particular titles that people really keep hold of.
+The results are overwhelmingly on managing wellbeing, or else helping with computing. Perhaps not so surprisingly, though nothing to do with the length of the book. The average loan times post had already shown an above average loan time for our 'Books on Prescription' titles, this further shows a certain number of particular titles that people really keep hold of.
 
 The feeling good handbook manages a huge average of 91 days on loan. Thankfully there are [plenty of copies available](https://www.librarieswest.org.uk/client/en_GB/default/search/detailnonmodal/ent:$002f$002fSD_ILS$002f0$002fSD_ILS:825639/one?qu=0452281326&te=ILS&rt=false%7C%7C%7CISBN%7C%7C%7CISBN).
