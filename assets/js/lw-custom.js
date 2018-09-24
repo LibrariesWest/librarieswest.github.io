@@ -6,10 +6,12 @@ var getJSON = function (url, callback) {
 	xhr.responseType = 'json';
 	xhr.onload = function () {
 		var status = xhr.status;
+		var response = [];
 		if (status === 200) {
-			callback(null, xhr.response);
+			if (typeof xhr.response === 'string') { response = JSON.parse(xhr.response); }
+			callback(null, response);
 		} else {
-			callback(status, xhr.response);
+			callback(status, response);
 		}
 	};
 	xhr.send();
