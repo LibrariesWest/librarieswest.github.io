@@ -6,9 +6,9 @@ var getJSON = function (url, callback) {
 	xhr.responseType = 'json';
 	xhr.onload = function () {
 		var status = xhr.status;
-		var response = [];
+		var response = xhr.response;
 		if (status === 200) {
-			if (typeof xhr.response === 'string') { response = JSON.parse(xhr.response); }
+			if (typeof response === 'string') { response = JSON.parse(xhr.response); }
 			callback(null, response);
 		} else {
 			callback(status, response);
