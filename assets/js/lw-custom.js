@@ -85,8 +85,8 @@ var createMemberMap = function () {
 						const map = new mapboxgl.Map({
 							container: "map",
 							style: 'https://librarieswest.github.io/assets/json/light.json',
-							center: [-3.00, 51.13],
-							zoom: 12
+							center: [-2.6, 50.1],
+							zoom: 8
 						});
 						map.addControl(new mapboxgl.FullscreenControl());
 						var nav = new mapboxgl.NavigationControl();
