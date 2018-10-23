@@ -157,4 +157,17 @@ document.addEventListener("DOMContentLoaded", function () {
 		addCSS('/assets/css/lw-custom.css');
 		createMemberMap();
 	}
+
+	// Search for divs with a class of chartjs
+	var chart_elements = document.getElementsByClassName("chartjs");
+	if (chart_elements && chart_elements && chart_elements.length > 0) {
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.onload = function(){
+		
+		
+		};
+		script.src = '';
+		document.getElementsByTagName('head')[0].appendChild(script);
+	}
 });
