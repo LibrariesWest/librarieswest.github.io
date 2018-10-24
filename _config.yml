@@ -1,5 +1,13 @@
 include: ["_pages"]
 
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+
 remote_theme: mmistakes/minimal-mistakes
 minimal_mistakes_skin: "dirt"
 

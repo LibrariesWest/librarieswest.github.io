@@ -163,9 +163,9 @@ document.addEventListener("DOMContentLoaded", function () {
 	if (chart_elements && chart_elements && chart_elements.length > 0) {
 		var script = document.createElement('script');
 		script.type = 'text/javascript';
-		script.onload = function(){
-		
-		
+		script.onload = function () {
+
+
 		};
 		script.src = '';
 		document.getElementsByTagName('head')[0].appendChild(script);
