@@ -13,7 +13,6 @@ There's plenty of LibrariesWest data that is interesting, but probably not inter
 | **30th July** | The day this year that saw the most new members joining LibrariesWest (906). It was a dry cloudy day. |
 | **52,071** | The number of items currently 'In Transit'. That means they are either moving between libraries to fulfil reservations, or being returned to their home branch. |
 | **3,959,353** | The number of times items have been borrowed from LibrariesWest libraries so far in 2018. |
-| **3,959,353** | The number of times items have been borrowed from LibrariesWest libraries so far in 2018. |
 | **Adult Fiction** | The most popular item type so far this year, with 1,510,317 issues. |
 | **504,313** | The number of reservations fulfilled this year by LibrariesWest libraries. |
 | **786,077** | The number of titles in the LibrariesWest catalogue. |
