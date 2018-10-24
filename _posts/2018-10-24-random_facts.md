@@ -16,6 +16,6 @@ There's plenty of LibrariesWest data that is interesting, but probably not inter
 | **786,077** | The number of titles in the LibrariesWest catalogue. |
 | **30th July** | The day this year that saw the most items borrowed (27,363) |
 | **17th September** | The day this year that saw the most reservations being placed (2,929) |
-| **11am-12pm** | The hour of the day when people most commonly place reservations |
+| **11am - 12pm** | The hour of the day when people most commonly place reservations |
  
-To discover more about public library data, delve into our Open Data extracts, all documented in our Open Data book.
+To discover more about public library data, delve into our Open Data extracts, all documented in [our Open Data book](https://librarieswest.gitbook.io/librarieswest-open-data).
