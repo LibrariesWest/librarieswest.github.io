@@ -43,7 +43,7 @@
     },
     "sources": {
         "composite": {
-            "url": "https://openzoom.librarydata.uk/zoomstack.json",
+            "url": "https://s3-eu-west-1.amazonaws.com/tiles.os.uk/data/vector/open-zoomstack/config.json",
             "type": "vector"
         }
     },
